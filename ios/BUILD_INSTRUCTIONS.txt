@@ -1,0 +1,57 @@
+PlaystorePlugins iOS Build Instructions
+========================================
+
+REQUIREMENTS:
+- macOS computer with Xcode installed
+- Apple Developer Account
+- iOS device or simulator
+
+STEPS TO BUILD:
+
+1. Install Xcode from the Mac App Store (if not already installed)
+
+2. Open Terminal and navigate to the ios folder
+
+3. Create a new Xcode project:
+   - Open Xcode
+   - File > New > Project
+   - Choose "App" template
+   - Product Name: PlaystorePlugins
+   - Bundle Identifier: com.playstoreplugins.tiktok
+   - Interface: Storyboard
+   - Language: Swift
+
+4. Replace the generated files with the provided files:
+   - AppDelegate.swift
+   - MainViewController.swift
+   - Info.plist
+
+5. Configure signing:
+   - Select the project in Xcode
+   - Go to "Signing & Capabilities"
+   - Select your development team
+   - Enable "Automatically manage signing"
+
+6. Add Background Modes capability:
+   - Click "+ Capability"
+   - Add "Background Modes"
+   - Enable "Audio, AirPlay, and Picture in Picture"
+
+7. Build the app:
+   - Select your target device
+   - Press Cmd + B to build
+   - Press Cmd + R to run
+
+8. Create IPA for distribution:
+   - Product > Archive
+   - Window > Organizer
+   - Select your archive
+   - Click "Distribute App"
+   - Follow the export wizard
+
+TROUBLESHOOTING:
+- If you get signing errors, make sure you have a valid Apple Developer account
+- For distribution outside App Store, you need an Enterprise account
+- Test on a real device for full functionality
+
+Contact: playstoreplugins@gmail.com
